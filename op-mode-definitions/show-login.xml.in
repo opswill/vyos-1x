@@ -18,7 +18,7 @@
             <properties>
               <help>Show current login level</help>
             </properties>
-            <command>if [ -n "$VYATTA_USER_LEVEL_DIR" ]; then basename $VYATTA_USER_LEVEL_DIR; fi</command>
+            <command>if test -n "$VYATTA_USER_LEVEL_DIR" ; then basename $VYATTA_USER_LEVEL_DIR; fi</command>
           </leafNode>
           <leafNode name="user">
             <properties>
